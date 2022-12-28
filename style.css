@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 8px 16px;
+    background-color: #111111;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 8px;
+    column-gap: 24px;
+}
+
+header img {
+    width: 120px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li {
+    margin-left: 24px;
+}
+
+header a {
+    color: #ebebeb;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* Quando passar o mouse em cima do link */
+header a:hover,  header a:focus {
+    color: #f13239;
+    padding-top: 4px;
+    border-top: 1px solid #f13239;
+}
+
+.hero {
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center 25%;
+    height: 320px;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    margin-top: 56px;
+}
+
+.hero h1 {
+    padding: 8px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: #ebebeb;
+}
+
+.gallery {
+    padding: 64px 24px 96px;
+}
+
+.gallery h2 {
+    margin-bottom: 32px;
+    padding-left: 8px;
+    border-left: 4px solid #f13239;
+    color: #111111;
+}
+
+.gallery figcaption {
+    font-weight: bold;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery figure {
+    flex: 1 1 250px;
+}
+
+.gallery-row img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.history {
+    background-color: #111111;
+    color: #ebebeb;
+    padding: 92px 24px 0;
+    border-top: 4px solid #f13239;
+}
+
+
+.history .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    border-bottom: 2px solid #f13239;
+}
+
+.history .container .col {
+    flex: 1 1 350px;
+}
+
+.history .container .col img {
+    width: 100%;
+    display: block;
+}
+
+.history h2 {
+    margin-bottom: 32px;
+    padding-left: 8px;
+    border-left: 4px solid #f13239;
+}
+
+.history p + p, footer p + p {
+    margin-top: 24px;
+}
+
+.history a {
+    color: #f13239;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.5s;
+}
+
+.history a:hover {
+    color: #ebebeb;
+}
+
+footer {
+    background-color: #111111;
+    color: #ebebeb;
+    padding: 64px 24px;
+    text-align: center;
+}
+
+footer a {
+    color: #f13239;
+    text-decoration: none;
+    white-space: nowrap;
+}
